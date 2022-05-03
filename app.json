@@ -1,0 +1,56 @@
+    {
+  "name": "Channel Backup Bot By ༒❣️☢️╣IrØή❂mคŇ╠☢️❣️༒",
+  "logo": "",      
+  "description": "Auto Forward Bot",
+  "keywords": [
+    "telegram",
+    "best",
+    "string",
+    "generator"
+  ],
+  "success_url": "https://telegram.dog/Pyro_SessionGen_bot",
+  "website": "https://github.com/TeamAlphaTg/Channel_Backup_Bot",
+  "repository": "https://github.com/Gishankrishka2/Tk_bot",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+
+
+
+    },
+    "FROM_CHANNEL_": {
+      "description": "Ur From Channel User Name Or Id",
+      "value": ""
+    },
+    "TO_CHANNEL": {
+      "description": "Ur To Channel User Name Or Id",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "START_MSG": {
+      "description": "Start Messege Id",
+      "value": "1"
+    },
+    "END_MSG": {
+      "description": "Stop Msg Id. Set It Default",
+      "value": "100000000"
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
