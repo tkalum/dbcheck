@@ -10,9 +10,7 @@ from .commands import start, BATCH
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from config import *
-import bot
 
-Client = bot.main.app
 
 @Client.on_callback_query(filters.regex('^help$'))
 async def help_cb(c, m):
